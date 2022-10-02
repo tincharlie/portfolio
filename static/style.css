@@ -298,22 +298,22 @@ h3{
 		flex-direction: column;
 	}
 }
-/*------campus------*/
-.campus{
+/*------expcer------*/
+.expcer{
 	width: 80%;
 	margin: auto;
 	text-align: center;
 	padding-top: 50px;
 
 }
-.campus-col{
+.expcer-col{
 	flex-basis: 32%;
 	border-radius: 10px;
 	margin-bottom: 30px;
 	position: relative;
 	overflow: hidden;
 }
-.campus-col img{
+.expcer-col img{
 	width: 100%;
 	display:block;
 }
@@ -348,35 +348,35 @@ h3{
 }
 
 
-/*------Facilities--------*/
+/*------projects--------*/
 
 
-.facilities{
+.projects{
 	width: 80%;
 	margin: auto;
 	text-align: center;
 	padding-top: 100px;
 }
-.facilities-col{
+.projects-col{
 	flex-basis: 31%;
 	border-radius: 10px;
 	margin-bottom: 5%;
 	text-align: left;
 }
-.facilities-col img{
+.projects-col img{
 	width: 100%;
 	border-radius: 10px;
 }
 
-.facilities-col p{
+.projects-col p{
 	padding: 0;
 }
-.facilities-col h3{
+.projects-col h3{
 	margin-top: 16px;
 	margin-bottom: 15px;
 	text-align: left;
 }
-.facilities-col a{
+.projects-col a{
 	text-decoration: none;
 }
 

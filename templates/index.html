@@ -18,6 +18,7 @@
 					<ul class="unorder-col">
 						<li><a href="{{ url_for('index') }}">HOME</a></li>
 						<li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+						<li><a href="{{ url_for('projects') }}">PROJECTS</a></li>
 					</ul>
 				</div>
 			   <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -55,25 +56,25 @@
 </section>
 
 
-<!------campus--------->
+<!------expcer--------->
 
 
-<section class="campus">
+<section class="expcer">
 <h1>Education and Certificates</h1>
 	<div class="row">
-		<div class="campus-col">
+		<div class="expcer-col">
 			<img src="static/pics/etl.jpg">
 			<div class="layer">
 				<h3>Etl Pune</h3>
 		</div>
 	</div>
-	<div class="campus-col">
+	<div class="expcer-col">
 			<img src="static/pics/cgtve.jpg">
 			<div class="layer">
 				<h3>cognitiveai</h3>
 		</div>
 	</div>
-	<div class="campus-col">
+	<div class="expcer-col">
 			<img src="static/pics/tsf.jpg">
 			<div class="layer">
 				<h3>Sparks foundation</h3>
@@ -82,12 +83,12 @@
    </div>
 </section>
 
-      <!--------Facilities--------->
-<section class="facilities">
+      <!--------Projects--------->
+<section class="projects">
 	<h1> Projects</h1>
 
 	<div class="row">
-		<div class="facilities-col">
+		<div class="projects-col">
 			<img src="static/pics/movie.jpg">
 			<a href="https://github.com/tincharlie/Movie_Clustering" target="_blank" style="color:black">
 				<h3>Movie Recommender</h3>
@@ -105,7 +106,7 @@
 				•	Built a function that gave best result and made a prediction to similar ones. 
 				</p>
 	 	</div>
-	 <div class="facilities-col">
+	 <div class="projects-col">
 			<img src="static/pics/laon.jpg">
 			<a href=" https://github.com/tincharlie/loan_eligibility_prediction" target="_blank" style="color:black">
 				<h3>Credibility for Loan</h3>
@@ -120,7 +121,7 @@
 				•	Predicted Loan amount eligibility of a customer.
 				</p>
 	 </div>
-	 <div class="facilities-col">
+	 <div class="projects-col">
 			<img src="static/pics/newscls.jpg">
 			<a  href="https://github.com/tincharlie/News_recommendation" target="_blank" style="color:black">
 				<h3>News Clustering</h3>
@@ -137,9 +138,10 @@
 	</div>
 	</div>
 	<div class="row">
-		<div class="facilities-col">
+		<div class="projects-col">
 			<img src="static/pics/50start.jpg">
-			<a href="https://normal-startup.herokuapp.com/" target="_blank" style="color:black">
+<!--			<a href="https://normal-startup.herokuapp.com/" target="_blank" style="color:black">-->
+			<a href="/proj" target="_blank" style="color:black">
 				<h3>50 Startup Analysis </h3>
 			</a>
 			<p>
@@ -155,7 +157,7 @@
 
 				</p>
 	 </div>
-	 <div class="facilities-col">
+	 <div class="projects-col">
 		<img src="static/pics/cartype.jpg">
 		<a href="https://github.com/tincharlie/Car_Type_Prediction" target="_blank" style="color:black">
 			<h3>Car Type Prediction  </h3>
@@ -172,7 +174,7 @@
 			•	Logistic Regression gave best accuracy model.
 		</p>
  </div>
- <div class="facilities-col">
+ <div class="projects-col">
 	<img src="static/pics/fifaeda.jpg">
 	<a href="https://github.com/tincharlie/EDA_fifa" target="_blank" style="color:black">
 		<h3>Fifa Data Analysis </h3>
@@ -190,6 +192,22 @@
 		•	Used Bar, Pie, Line, Distribution etc. plots for Data Visualization.
 		
 		</p>
+	</div>
+	<div class="projects-col">
+	<img src="static/pics/fifaeda.jpg">
+	<a href="/bostproj" target="_blank" style="color:black">
+		<h3>Boston House Price Prediction</h3>
+	</a>
+	<p>
+		•	Here I found all the best predictor.<br>
+		•	After doing all the analysis of features.<br>
+		•	Just around 7 features I got successfully that we can use it for prediction.<br>
+		•	Replaced lots of null values are present in the best cols.<br>
+		•	Median maen and mode used to replace the respective values of catergories.<br>
+		•	Convert the categorical to continous values.<br>
+		•	So all the values must in the standardized or normalized way.<br>
+		•	Used standard scaler to come the values in some sort of same range.
+	</p>
 	</div>
 	</div>	
 
