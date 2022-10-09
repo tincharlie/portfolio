@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Celebrity Image Classification Prediction</title>
+</head>
+<body>
+<div align="center">
+	{% if prediction %}
+  <img src="{{img_path}}" height="400px" width="400px">
+	<h1> Celeb Prediction   : <i> {{prediction}} </i></h1>
+
+	{% endif %}
+</div>
+</body>
+</html>
