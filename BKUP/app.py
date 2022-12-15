@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 from pickle import load, dump
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing import image
 
 app = Flask(__name__)
 import pandas as pd
@@ -73,8 +75,43 @@ def predict2():
     predict_price = round(
         bostmodel.predict([[features[0], features[1], features[2], features[3], features[4], features[5]]])[0], 2)
 
-    return render_template("bostresult.html", predi = predict_price)
+    return render_template("bostresult.html", predi=predict_price)
+
+
+dic = {0: 'lionel_messi', 1: 'virat_kohli', 2: 'maria_sarapowa', 3: 'ms_dhoni', 4: 'roger_fedderer',
+       5: 'serena_williams'}
+
+model = load_model('modeeel.h5')
+
+model.make_predict_function()
+
+
+def predict_label(img_path):
+    i = image.load_img(img_path, target_size=(100, 100))
+    i = image.img_to_array(i) / 255.0
+    i = i.reshape(1, 100, 100, 3)
+    p = model.predict_classes(i)
+    return dic[p[0]]
+
+
+# routes
+@app.route("/imgindex", methods=['GET', 'POST'])
+def imgindex():
+    return render_template("ImIndex.html")
+
+
+@app.route("/imgsubmit", methods=['GET', 'POST'])
+def get_output():
+    if request.method == 'POST':
+        img = request.files['my_image']
+
+        img_path = "static/imgPred/" + img.filename
+        img.save(img_path)
+
+        p = predict_label(img_path)
+
+    return render_template("predimg.html", prediction=p, img_path=img_path)
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port = 5002)
+    app.run(debug=True, port=5002)
