@@ -55,7 +55,7 @@ nav img{
 	height: 70%;
 	width: 90px;
 	cursor: pointer;
-	animation: movedown 1s linear 1;
+	animation: moved 1s linear 1;
 	animation-delay: 1s;
 	visibility: hidden;
 	animation-fill-mode: forwards;

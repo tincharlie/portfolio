@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,7 +9,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-		<section class="header" >
+
+<section class="header" >
 			<nav >
 				<a href="{{ url_for('index') }}"> <img src="static/pics/user1.jpg" class="logo"></a>
 				<div class="nav-links" id="navLinks">
@@ -25,65 +25,13 @@
 			</nav>
 
 <div class="text-box">
-	<h1>Data Scientist and Analytics</h1>
-	<p> An independent and self-motivated student with proven ability and experience in developing <br> applications and Data Science projects.</p>
+	<h1>Projects</h1>
+	<p> Here I have added my project that you see and use it.</p>
 </div>
-		</section>
-
-<!-------course-------->
-<section class="course">
-	<h1>Work Experience and Course</h1>
-<div class="row">
-	<div class="course-col">
-		<h3>Data Science Trainee</h3>
-		<p>Learnt Data Scraping, Data Cleaning, Model Building and Deployment. <br>Handled all the dirty data from source from different format like json, html, sql etc.<br>
-		By using Exploratory data analysis found fruitfull insights from data with scatterplot, boxplot, countplot as well as univariate charts. </p>
-	</div>
-	<div class="course-col">
-		<h3>Data Science with python</h3>
-		<p>Started journey for data science from cognitiveai, it basically provides Courses for python machine learning with basic.<br>
-			Completed all milestones which was necessary and also given a test at last. <br> For Evaluating myself was very helpfull.</p>
-	</div>
-	<div class="course-col">
-		<h3>Data Science Intern</h3>
-
-		<p>Intern at The Sparks foundation for 3 months.<br> Learnt Application of data science where worked on Project on Credibility of loan
-			<br> Basically there were 3 problems <br> Eligibility <br> Not, Basis on it, How much Amount and time can give</p>
-	</div>
-</div>
-
-
 </section>
 
 
-<!------expcer--------->
-
-
-<section class="expcer">
-<h1>Education and Certificates</h1>
-	<div class="row">
-		<div class="expcer-col">
-			<img src="static/pics/etl.jpg">
-			<div class="layer">
-				<h3>Etl Pune</h3>
-		</div>
-	</div>
-	<div class="expcer-col">
-			<img src="static/pics/cgtve.jpg">
-			<div class="layer">
-				<h3>cognitiveai</h3>
-		</div>
-	</div>
-	<div class="expcer-col">
-			<img src="static/pics/tsf.jpg">
-			<div class="layer">
-				<h3>Sparks foundation</h3>
-		</div>
-	</div>
-   </div>
-</section>
-
-      <!--------Projects--------->
+ <!--------Projects--------->
 <section class="projects">
 	<h1> Projects</h1>
 
@@ -103,7 +51,7 @@
 				•	Created all the movie tags which were converted by using vectorizer. <br>
 				•	Created corpus by merging all columns as a dictionary.<br>
 				•	Movie to movie distance was found through cosine distance for related movies.<br>
-				•	Built a function that gave best result and made a prediction to similar ones. 
+				•	Built a function that gave best result and made a prediction to similar ones.
 				</p>
 	 	</div>
 	 <div class="projects-col">
@@ -134,14 +82,15 @@
 				•	On K-means cluster, preprocessed columns on every word were passed to make clusters of news.<br>
 				•	Used NMF Non Negative matrix factorization for two matrices.<br>
 				•	At the end, the result created clusters in form of tagging of news topics.<br>
-				</p>	 
+				</p>
 	</div>
 	</div>
 	<div class="row">
 		<div class="projects-col">
 			<img src="static/pics/50start.jpg">
 <!--			<a href="https://normal-startup.herokuapp.com/" target="_blank" style="color:black">-->
-			<a href="/proj" target="_blank" style="color:black">
+                			<a href="/proj" target="_blank" style="color:black">
+
 				<h3>50 Startup Analysis </h3>
 			</a>
 			<p>
@@ -182,7 +131,7 @@
 	<p>
 		•	Finding Indian FIFA team players with different kinds of quality.<br>
 		•	Analysis of all clubs, names, jersey number, contract, and position of top player with overall performance.<br>
-		•	On the basis of any columns, used describe to know mean, count, min-max values in the dataset in each column.<br> 
+		•	On the basis of any columns, used describe to know mean, count, min-max values in the dataset in each column.<br>
 		•	Find all the missing values which can be replaced without affecting the dataset.<br>
 		•	Applied mean, median and mode for replacing Nan values in the curved, volleys, skill moves and columns.<br>
 		•	Created functions for defending, general, shooting etc. for finding overall mean.<br>
@@ -190,116 +139,38 @@
 		•	Identified youngest and eldest players in FIFA team players. <br>
 		•	Converted categorical variables into dummy variables.<br>
 		•	Used Bar, Pie, Line, Distribution etc. plots for Data Visualization.
-		
+
 		</p>
 	</div>
-	<div class="projects-col">
-	<img src="static/pics/fifaeda.jpg">
-	<a href="/bostproj" target="_blank" style="color:black">
-		<h3>Boston House Price Prediction</h3>
-	</a>
-	<p>
-		•	Here I found all the best predictor.<br>
-		•	After doing all the analysis of features.<br>
-		•	Just around 7 features I got successfully that we can use it for prediction.<br>
-		•	Replaced lots of null values are present in the best cols.<br>
-		•	Median maen and mode used to replace the respective values of catergories.<br>
-		•	Convert the categorical to continous values.<br>
-		•	So all the values must in the standardized or normalized way.<br>
-		•	Used standard scaler to come the values in some sort of same range.
-	</p>
 	</div>
-	</div>	
+    <div class="row">
+		<div class="projects-col">
+			<img src="static/pics/bstonHouse.jpg">
+			<a href="/bostproj" target="_blank" style="color:black">
+				<h3>Boston House Price Prediction</h3>
+			</a>
+			<p>
+				•	Here I found all the best predictor.<br>
+				•	After doing all the analysis of features.<br>
+				•	Just around 7 features I got successfully that we can use it for prediction.<br>
+				•	Replaced lots of null values are present in the best cols.<br>
+				•	Median maen and mode used to replace the respective values of catergories.<br>
+				•	Convert the categorical to continous values.<br>
+				•	So all the values must in the standardized or normalized way.<br>
+				•	Used standard scaler to come the values in some sort of same range.
+			</p>
+		</div>
+		<div class="projects-col">
+			<img src="static/pics/imgcls1.jpg">
+			<a href="/imgindex" target="_blank" style="color:black">
+				<h3>Image Classification</h3>
+			</a>
+			<p>
+			</p>
+		</div>
+	</div>
 
 
 </section>
-
-
-        <!-------testimonials----------->
-<section class="testimonials">
-<!--	<h1> Goals which i will complete</h1>-->
-<!--	<p> I Will Create an application with the feature of future prediction using past data with astrology from Vedic Culture.-->
-<!--		Would make industry where we will predict which stocks customer must buy and will do forecaste for future stock using astrology.-->
-<!--	    Create one company for green energy vehicle for all villagers and farmer can purchase in very low cost. </p> -->
-    <h1 align="center"> Blog Post </h1>
-	<div class="ml-20">
-       	<div class="testimonials-col">
-       				<img src="static/pics/user1.jpg">
-       				<div>
-       					<p>
-							<h3><a target="_blank" href="https://medium.com/@vipulshukla999/linear-regression-with-real-world-application-cf14ecc95376">
-							   Linear Regression with real world application
-							</a></h3>
-
-							Here Sam going to start a company so he think i should have to see the pros and cons of startup by looking the previous data. So it gives more information and take a decision will be very handy.<br>							
-							Machine learning<br>
-							The Machine learning intends to solve the problem where anything is done by human. It is basically We can say it helps to take a decision as like human.<br>
-							Example:<br>
-							“If you want to take a decision of any human task. So that can be done by implementing of machine learning algorithm.”<br>
-							As we are talking about machine learning so there is three things will come in this scenerio.<br>
-							1. Supervised Machine Learning<br>
-							2. Unsupervised Machine Learning<br>
-							1. Supervised Machine Learning :<br>
-							In supervised learning our main aim is to predict something<br>
-							If I talk about supervised learning there two types<br>
-							1 Regression<br>
-							2 Classification<br>
-							Regression:<br>
-							Regression our main goal is to predict a value that that is continuous.<br>
-							Classification:<br>
-							Classification goal is to predict a value that is categorical 
-							<a target="_blank" href="https://medium.com/@vipulshukla999/linear-regression-with-real-world-application-cf14ecc95376">cont...</a>
-       					<h3>Vipul Shukla</h3>
-						   <a href="https://medium.com/@vipulshukla999?source=post_page-----cf14ecc95376-----------------------------------"><h4>Blog</h4></a>
-       			</div>
-      		</div>
-       </div>
-</section>
-
-<!------Call to Action--------->
-
-<section class="cta">
-	<h1>
-		Reach out to me<br>
-		</h1>
-		<a href="{{ url_for('contact') }}" id="contact.html" class="hero-btn">CONTACT ME</a> 
-</section>
-
-
-<!-------footer---------->
-
-<section class="footer">
-	<div  class="content">
-	<h4>ABOUT ME</h4>
-		<p>Data Scientist, Developer, Machine Learning, Data Analytics etc.</p> 
-</div>
-<div class="icons">
-		<i class="fa fa-linkedin-square"></i>
-		<i class="fa fa-twitter"></i>
-		<i class="fa fa-github"></i>
-</div>
-<p> Thanks To <i class="fa fa-code"></i> Come here</p>
-</section>
-	
-	
-
-
-
-
-<!------JavaScript for Toggle Menu--------->
-<script >
-	var navLinks=document.getElemenytById("navLinks");
-	
-
-	function showMenu() {
-		navLinks.stylesheet.right = "0";
-	}
-
-	function hideMenu() {
-		navLinks.stylesheet.right = "-200px";
-
-	}
-</script>
-
 </body>
 </html>
